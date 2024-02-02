@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TensorFlow.js Image Classification</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <style>
+    body {
+      background: #161f27;
+      color: #dbdbdb;
+      font-family: 'Arial', sans-serif;
+    }
+
+    video {
+      width: 400px;
+      height: 400px;
+    }
+
+    button {
+      background-color: #41adff;
+      color: #161f27;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #console {
+      margin-top: 20px;
+      color: #41adff;
+      font-size: 18px;
+    }
+
+    h1,h3 {
+      color: white; /* Set h1 color to white */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ASL to Text Demo </h1>
+  <h3>- by Team DD</h3>
+
+  <div id="console"></div>
+
+  <!-- Add an image that we will use to test -->
+  <video autoplay playsinline muted id="webcam" width="400" height="400"></video>
+
+  <button id="Hi">Add Hi</button>
+  <button id="I">Add I</button>
+  <button id="am">Add am</button>
+  <button id="G">Add g</button>
+ <marquee width="100%" direction="right" height="50px"> <img src="https://media.tenor.com/8cHH-FfpGrIAAAAi/sonic.gif" alt="Sonic Walking" style="width:50px;height:50px;"> </marquee>   <script src="index.js"></script>
+</body>
+
+</html>
+
