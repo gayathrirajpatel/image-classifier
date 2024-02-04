@@ -53,6 +53,10 @@ async function app() {
     }
 
     await tf.nextFrame();
+
+
+
+    
   }
 
   // Form a sentence with predicted classes and speak it after exiting the loop
